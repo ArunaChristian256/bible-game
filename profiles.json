@@ -1,0 +1,93 @@
+{
+  "CHRISTIAN": {
+    "performance": 0.92,
+    "level": "Débutant",
+    "history": [
+      {
+        "question": "Quel roi est célèbre pour sa sagesse ?",
+        "given": "Salomon",
+        "correct": "Salomon",
+        "time": 1761299423.2304738
+      },
+      {
+        "question": "Quel prophète est associé à les ossements desséchés ?",
+        "given": "Ézéchiel",
+        "correct": "Ésaïe",
+        "time": 1761299445.4154658
+      },
+      {
+        "question": "Quel roi est célèbre pour sa sagesse ?",
+        "given": "Salomon",
+        "correct": "Salomon",
+        "time": 1761299457.1424315
+      },
+      {
+        "question": "Quel roi est célèbre pour sa sagesse ?",
+        "given": "Salomon",
+        "correct": "Salomon",
+        "time": 1761299465.4585469
+      },
+      {
+        "question": "Quel roi est célèbre pour sa sagesse ?",
+        "given": "Salomon",
+        "correct": "Salomon",
+        "time": 1761299480.5538766
+      },
+      {
+        "question": "Dans quel livre trouve-t-on la vision des ossements desséchés ?",
+        "given": "Ézéchiel",
+        "correct": "Ézéchiel",
+        "time": 1761386547.7243395
+      },
+      {
+        "question": "Quel prophète est associé à les ossements desséchés ?",
+        "given": "Ésaïe",
+        "correct": "Jérémie",
+        "time": 1761386577.1801965
+      },
+      {
+        "question": "Quel prophète est associé à les ossements desséchés ?",
+        "given": "Jérémie",
+        "correct": "Jérémie",
+        "time": 1761386587.129122
+      },
+      {
+        "question": "Dans quel livre trouve-t-on la vision des ossements desséchés ?",
+        "given": "Ézéchiel",
+        "correct": "Ézéchiel",
+        "time": 1761386599.4605412
+      },
+      {
+        "question": "Quel prophète est associé à les ossements desséchés ?",
+        "given": "Jérémie",
+        "correct": "Jérémie",
+        "time": 1761386607.4817624
+      },
+      {
+        "question": "Dans quel livre trouve-t-on la vision des ossements desséchés ?",
+        "given": "Ézéchiel",
+        "correct": "Ézéchiel",
+        "time": 1761386614.6103685
+      },
+      {
+        "question": "Quel prophète est associé à les ossements desséchés ?",
+        "given": "Jérémie",
+        "correct": "Jérémie",
+        "time": 1761386629.1598217
+      },
+      {
+        "question": "Quel prophète est associé à les ossements desséchés ?",
+        "given": "Jérémie",
+        "correct": "Jérémie",
+        "time": 1761386639.320561
+      },
+      {
+        "question": "Quel prophète est associé à les ossements desséchés ?",
+        "given": "None",
+        "correct": "Jérémie",
+        "time": 1761386645.8085976
+      }
+    ],
+    "created": 1761299403.915321
+  }
+}
