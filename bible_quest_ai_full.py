@@ -129,8 +129,9 @@ def generate_question_local(topic="Histoire", difficulty="Intermédiaire"):
 class BibleQuestAI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Bible Quest AI - Complet")
-        self.root.geometry("920x620")
+        self.root.title("Bible Quest AI")
+        self.root.geometry("900x420")
+        self.root.resizable(False, False)
         self.root.configure(bg="#0b0f19")
 
         self.questions = load_questions()
@@ -152,16 +153,18 @@ class BibleQuestAI:
     def create_welcome(self):
         self.clear()
         tk.Label(self.root, text="🧠 Bible Quest AI", font=("Orbitron", 36, "bold"), fg="#00eaff", bg="#0b0f19").pack(pady=20)
-        tk.Label(self.root, text="Entrez ton nom pour sauvegarder ta progression :", font=("Segoe UI", 14), fg="white", bg="#0b0f19").pack(pady=6)
-        name_btn = tk.Button(self.root, text="Saisir nom / Charger profil", font=("Segoe UI", 14), bg="#00eaff", fg="#0b0f19", command=self.ask_player)
-        name_btn.pack(pady=12)
+        name_btn = tk.Button(self.root, text="Profil", font=("Segoe UI", 12), bg="#00eaff", fg="#0b0f19", command=self.show_profiles)
+        name_btn.place(x = 2, y = 2)
+        tk.Button(self.root, text="connexion", font=("Segoe UI", 12), bg="#00cc88", fg="#0b0f19", command=self.login).place(x =55, y = 2)
+
         # Bouton de connexion additionnel
-        tk.Button(self.root, text="Se connecter", font=("Segoe UI", 12), bg="#00cc88", fg="#0b0f19", command=self.login).pack(pady=6)
-        tk.Button(self.root, text="Générer une nouvelle question (pour tester)", font=("Segoe UI", 12), bg="#ffaa00", command=self.test_generate).pack(pady=8)
-        tk.Button(self.root, text="Lancer l'entraînement", font=("Segoe UI", 14), bg="#00eaff", fg="#0b0f19", command=self.start_quiz).pack(pady=20)
-        tk.Label(self.root, text="Options :", fg="gray", bg="#0b0f19").pack(pady=(30,6))
-        tk.Button(self.root, text="Importer / Ajouter questions (json)", command=self.import_questions).pack(pady=4)
-        tk.Button(self.root, text="Voir profils sauvegardés", command=self.show_profiles).pack(pady=4)
+        tk.Label(self.root, text="Lancer L'entrainement", font=50, bg="#0b0f19", fg="white").place(x = 245 , y = 150 )
+        tk.Label(self.root, text="Nouvelle Question", fg="white", font=30, bg="#0b0f19").place(x = 450 , y = 150)
+        tk.Button(self.root, text="Ajouter", font=("Segoe UI", 14), bg="#ffaa00", width=12, command=self.test_generate).place(x = 450, y = 180)
+        tk.Button(self.root, text="Commancer", font=("Segoe UI", 14), width=15, bg="#00eaff", fg="#0b0f19", command=self.start_quiz).place(x = 245, y = 180)
+        tk.Label(self.root, text="Options  :", font=(("areal sens serif"), 14), fg="white", bg="#0b0f19").place(x = 10, y = 280 )
+        tk.Label(self.root, text="importer des questios depuis un fichier json ", background="#0b0f19", fg="white", font=50, bd=2).place(x = 100, y = 280)
+        tk.Button(self.root, text="Importer", font=12, bg="#ffaa00", width=12, command=self.import_questions).place(x = 100, y = 320 )
 
     def ask_player(self):
         name = simpledialog.askstring("Nom du joueur", "Ton nom (sera utilisé pour sauvegarder ta progression) :")
@@ -205,7 +208,7 @@ class BibleQuestAI:
         frame = tk.Frame(top, padx=10, pady=10)
         frame.pack(fill="both", expand=True)
         # Ajout d'un bouton pour revenir / fermer la fenêtre
-        tk.Button(frame, text="← Retour au menu", bg="#444", fg="white", command=top.destroy).pack(anchor="nw")
+        tk.Button(frame, text="Retour", bg="#444", fg="white", command=top.destroy).pack(anchor="nw")
         for name, data in self.profiles.items():
             txt = f"{name} — niveau: {data.get('level','-')} — perf: {int(data.get('performance',0.5)*100)}% — cré: {time.strftime('%Y-%m-%d', time.localtime(data.get('created',0)))}"
             btn = tk.Button(frame, text=txt, anchor="w", command=lambda n=name: self.load_profile(n))
