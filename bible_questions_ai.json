@@ -262,5 +262,29 @@
     "answer": "Luc",
     "difficulty": "Débutant",
     "topic": "Vie de Jésus"
+  },
+  {
+    "question": "Quel livre contient principalement des conseils et proverbes ?",
+    "options": [
+      "Ésaïe",
+      "Romains",
+      "Proverbes",
+      "Psaumes"
+    ],
+    "answer": "Ésaïe",
+    "difficulty": "Débutant",
+    "topic": "Sagesse"
+  },
+  {
+    "question": "Quel livre contient principalement des conseils et proverbes ?",
+    "options": [
+      "Proverbes",
+      "Psaumes",
+      "Romains",
+      "Ésaïe"
+    ],
+    "answer": "Proverbes",
+    "difficulty": "Débutant",
+    "topic": "Sagesse"
   }
 ]
